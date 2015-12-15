@@ -1,6 +1,6 @@
 {
   "name": "recxmltorecjson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts recxml to recjson",
   "license": "MIT",
   "main": "index",
