@@ -1,6 +1,6 @@
 {
-  "name": "xml2json",
-  "version": "0.9.0",
+  "name": "recxmltorecjson",
+  "version": "0.0.1",
   "description": "Converts recxml to recjson",
   "license": "MIT",
   "main": "index",
@@ -8,5 +8,24 @@
     "hoek": "^2.14.0",
     "joi": "^6.4.3",
     "node-expat": "^2.3.9"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggence/node-xml2json"
+  },
+  "keywords": [
+    "recxml"
+  ],
+  "author": "see AUTHORS file",
+  "bugs": {
+    "url": "https://github.com/ggence/node-xml2json/issues"
+  },
+  "homepage": "https://github.com/ggence/node-xml2json"
 }
