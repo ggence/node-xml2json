@@ -1,6 +1,27 @@
 RecXML to JSON
 based on script from https://github.com/buglabs/node-xml2json
 
+```javascript
+var parser = require('../recxmljsonparser');
+var promise = require('promise');
+var fs = require('fs');
+var util = require('util');
+
+
+var pReadFile  = promise.denodeify(fs.readFile);
+
+pReadFile('./data_example/exemple_1.xml', 'utf8')
+.then(function  (recxml_data,err) 
+{
+
+  var jsonString = parser.toJson(recxml_data); //returns a string containing the JSON structure by default 
+  console.log(jsonString);
+
+}
+,function  (err) {
+  console.log(err);
+});
+```
 
 ## License
 (The MIT License)
